@@ -13,6 +13,8 @@ function Scene() {
         position={[0, 3.3, 0]}
         fontSize={0.4}
         color="white"
+        font="/Cortex.ttf"
+        letterSpacing={0.2}
       >
         Ghostwire Tokyo
       </Text>
@@ -21,8 +23,10 @@ function Scene() {
       
         <Text
           position={[0, -1.5, 0]}
-          fontSize={0.4}
+          fontSize={0.3}
           color="red"
+          font="/Brique.otf"
+        
         >
           WARNING!
         </Text>
@@ -42,13 +46,15 @@ function Scene() {
         position={[0, -2.7, 0]}
         fontSize={0.3}
         color="yellow"
+        font='/SpaceMono.ttf'
+        letterSpacing={-0.05}
       >
         Hover over the image to see the effect
       </Text>
       
         <EffectComposer>
           <Bloom
-            intensity={1.0}
+            intensity={0.5}
             luminanceThreshold={0.8}
             luminanceSmoothing={0.9}
           />
@@ -86,6 +92,8 @@ function Scene() {
         color="white"
         maxWidth={5}
         textAlign="center"
+        font='/SpaceMono.ttf'
+        letterSpacing={-0.05}
       >
         This effect may potentially trigger seizures for people with photosensitive epilepsy
       </Text>
